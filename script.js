@@ -101,7 +101,7 @@ function generatePass() {
     initialPass.push(getRandom(possibleCharacters));
   }
 // adds the guaranteed characters based on the user's selected options to the inital password
-  finalPass = yeet.concat(guaranteedCharacters);
+  finalPass = initialPass.concat(guaranteedCharacters);
 //returns and prints the password without commas or quotations
   return finalPass.join("")
 }
